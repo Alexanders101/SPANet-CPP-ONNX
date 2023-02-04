@@ -13,7 +13,13 @@ Then run the following commands
 git clone --recursive https://github.com/Alexanders101/SPANet-CPP-ONNX
 cd SPANet-CPP-ONNX
 mkdir build
-cmake -DCMAKE_BUILD_TYPE=Release -Donnxruntime_USE_CUDA=ON -DONNXRUNTIME_ROOTDIR=${ONNXRUNTIME_ROOTDIR} -S $(pwd) -B $(pwd)/build
+cmake \
+  -DCMAKE_BUILD_TYPE=Release \
+  -Donnxruntime_USE_CUDA=ON \
+  -DONNXRUNTIME_ROOTDIR=${ONNXRUNTIME_ROOTDIR} \
+  -S $(pwd) \
+  -B $(pwd)/build
+  
 cmake --build $(pwd)/build --target spanet_onnx -- -j 8
 ./build/spanet_onnx example/tth.onnx example/semi_leptonic_ttH.yaml example/example.h5 example/output.h5
 ```
