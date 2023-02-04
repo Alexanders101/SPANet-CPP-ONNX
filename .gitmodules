@@ -1,0 +1,12 @@
+[submodule "HighFive"]
+	path = ext/HighFive
+	url = https://github.com/BlueBrain/HighFive
+[submodule "rapidyaml"]
+	path = ext/rapidyaml
+	url = https://github.com/biojppm/rapidyaml
+[submodule "ext/xtensor"]
+	path = ext/xtensor
+	url = https://github.com/xtensor-stack/xtensor
+[submodule "ext/xtl"]
+	path = ext/xtl
+	url = https://github.com/xtensor-stack/xtl
