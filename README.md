@@ -25,4 +25,4 @@ cmake --build $(pwd)/build --target spanet_onnx -- -j 8
 ```
 
 ## Acknowledgement
-Big thanks to the following repo for providing some examples on using the C++: [https://github.com/leimao/ONNX-Runtime-Inference](https://github.com/leimao/ONNX-Runtime-Inference) 
+Big thanks to the following repo for providing some examples on using the ONNX C++ API: [https://github.com/leimao/ONNX-Runtime-Inference](https://github.com/leimao/ONNX-Runtime-Inference) 
